@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass -rw sass/ -o css/",
-    "live-server": "live-server"
+    "compile:sass": "node-sass --output-style compressed -w sass/main.scss css/main.min.css",
+    "live-server": "live-server",
+    "dev": "concurrently --kill-others \"npm run compile:sass\" \"npm run live-server\""
   },
   "author": "Ilija Ivic",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "concurrently": "^6.4.0",
     "live-server": "^1.2.1",
     "node-sass": "^7.0.0"
   }
