@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass --output-style compressed -w sass/main.scss css/main.min.css",
+    "compile:sass": "node-sass --output-style compressed -w sass/ -o css/",
     "live-server": "live-server",
     "dev": "concurrently --kill-others \"npm run compile:sass\" \"npm run live-server\""
   },
