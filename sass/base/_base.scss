@@ -15,3 +15,8 @@ html {
 body {
 	padding: 3rem;
 }
+
+*:focus {
+	outline: none;
+	box-shadow: 0 0 0 1rem rgba($color-white, 0.4);
+}
