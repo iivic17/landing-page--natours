@@ -12,3 +12,15 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+@mixin hideElement {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+
+@mixin showElement {
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
+}

@@ -36,9 +36,8 @@
 	}
 
 	&__input:placeholder-shown + &__label {
-		opacity: 0;
-		pointer-events: none;
-		visibility: hidden;
+		@include hideElement();
+
 		transform: translateY(-4rem);
 	}
 
