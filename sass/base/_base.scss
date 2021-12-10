@@ -22,3 +22,8 @@ body {
 	outline: none;
 	box-shadow: 0 0 0 1rem rgba($color-white, 0.4);
 }
+
+.link-img:focus {
+	outline: 2px solid rgba($color-white, 0.2);
+	box-shadow: none;
+}
