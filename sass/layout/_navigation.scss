@@ -4,10 +4,12 @@
 	}
 
 	&__button {
+		cursor: pointer;
 		background-color: $color-white;
 		width: 7rem;
 		height: 7rem;
 		border-radius: 50%;
+		box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
 
 		position: fixed;
 		top: 6rem;
@@ -29,8 +31,9 @@
 			$color-primary-light,
 			$color-primary-dark
 		);
+
+		transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 		z-index: 9997;
-		transform: scale(70);
 	}
 
 	&__nav {
@@ -41,6 +44,12 @@
 		top: 0;
 		right: 0;
 		z-index: 9998;
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		width: 0;
+		transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	}
 
 	&__list {
@@ -89,5 +98,16 @@
 			color: $color-primary;
 			transform: translateX(1rem);
 		}
+	}
+
+	&__checkbox:checked ~ &__background {
+		transform: scale(80);
+	}
+
+	&__checkbox:checked ~ &__nav {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+		width: 100%;
 	}
 }
