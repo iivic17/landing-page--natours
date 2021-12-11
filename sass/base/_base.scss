@@ -25,16 +25,16 @@ html {
 	@include respond(tab-port) {
 		font-size: 50%;
 	}
-
-	@include respond(phone) {
-		font-size: 50%;
-	}
 }
 
 body {
 	padding: 3rem;
 
 	overflow-x: hidden;
+
+	@include respond(tab-port) {
+		padding: 0;
+	}
 }
 
 *:focus {

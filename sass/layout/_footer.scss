@@ -5,6 +5,10 @@
 	padding: 10rem 0;
 	font-size: 1.4rem;
 
+	@include respond(tab-port) {
+		padding: 8rem 0;
+	}
+
 	&__logo-box {
 		text-align: center;
 		margin-bottom: 8rem;
@@ -20,14 +24,28 @@
 		padding-top: 2rem;
 		max-width: 85%;
 		margin-left: auto;
+
+		@include respond(tab-port) {
+			margin: 0 auto;
+			width: 100%;
+			text-align: center;
+		}
 	}
 
 	&__navigation {
 		float: left;
+
+		@include respond(tab-port) {
+			float: none;
+		}
 	}
 
 	&__copyright {
 		float: right;
+
+		@include respond(tab-port) {
+			float: none;
+		}
 	}
 
 	&__list {
