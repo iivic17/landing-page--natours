@@ -1,4 +1,4 @@
-@mixin clearFix {
+@mixin clearFix() {
 	&::after {
 		content: '';
 		display: table;
@@ -6,21 +6,55 @@
 	}
 }
 
-@mixin absoluteCenter {
+@mixin absoluteCenter() {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-@mixin hideElement {
+@mixin hideElement() {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
 }
 
-@mixin showElement {
+@mixin showElement() {
 	visibility: visible;
 	opacity: 1;
 	pointer-events: auto;
+}
+
+//    0px -  600px : Phone
+//  600px -  900px : Tablet portrait
+//  900px - 1200px : Tablet landscape
+// 1200px - 1800px : Default
+// 1800px +        : Big screen
+
+// options: phone / tab-port / tab-land / big-screen
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == big-screen {
+		@media (min-width: 112.5em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-land {
+		@media (max-width: 75em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-port {
+		@media (max-width: 56.25em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == phone {
+		@media (max-width: 37.5em) {
+			@content;
+		}
+	}
 }

@@ -7,15 +7,34 @@
 }
 
 html {
-	font-size: $default-rem-size;
-
 	box-sizing: border-box;
 
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+
+	font-size: 62.5%;
+
+	@include respond(big-screen) {
+		font-size: 75%;
+	}
+
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
+
+	@include respond(phone) {
+		font-size: 50%;
+	}
 }
 
 body {
 	padding: 3rem;
+
+	overflow-x: hidden;
 }
 
 *:focus {
