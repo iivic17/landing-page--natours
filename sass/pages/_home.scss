@@ -3,6 +3,10 @@
 
 	padding: 25rem 0;
 	margin-top: -20vh;
+
+	@include respond(tab-port) {
+		padding: 35rem 0 55rem 0;
+	}
 }
 
 .section-features {
@@ -30,6 +34,10 @@
 
 	padding: 25rem 0 15rem 0;
 	margin-top: -10rem;
+
+	@include respond(tab-port) {
+		padding: 30rem 0 15rem 0;
+	}
 }
 
 .section-stories {

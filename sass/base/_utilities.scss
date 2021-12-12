@@ -4,24 +4,48 @@
 
 .u-margin-bottom-s {
 	margin-bottom: 1.5rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 1rem !important;
+	}
 }
 
 .u-margin-bottom-m {
 	margin-bottom: 4rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 2rem !important;
+	}
 }
 
 .u-margin-bottom-ml {
 	margin-bottom: 6rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 5rem !important;
+	}
 }
 
 .u-margin-bottom-l {
 	margin-bottom: 8rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 7rem !important;
+	}
 }
 
 .u-margin-top-l {
 	margin-top: 8rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 6rem !important;
+	}
 }
 
 .u-margin-top-xl {
 	margin-top: 10rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 8rem !important;
+	}
 }

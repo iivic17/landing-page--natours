@@ -10,6 +10,10 @@
 
 	transition: all 0.3s;
 
+	@include respond(tab-port) {
+		padding: 5rem 6rem;
+	}
+
 	&:hover {
 		transform: translateY(-1.5rem) scale(1.03);
 	}
