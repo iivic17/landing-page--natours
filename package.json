@@ -10,10 +10,11 @@
   },
   "author": "Ilija Ivic",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "concurrently": "^6.4.0",
-    "live-server": "^1.2.1",
-    "node-sass": "^7.0.0"
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
   }
 }
