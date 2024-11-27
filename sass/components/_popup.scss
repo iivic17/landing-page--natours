@@ -39,6 +39,10 @@
 
 		display: table-cell;
 		vertical-align: middle;
+
+		@include respond(tab-land) {
+			display: none;
+		}
 	}
 
 	&__right {
@@ -48,6 +52,7 @@
 		vertical-align: middle;
 
 		padding: 3rem 5rem;
+
 	}
 
 	&__img {
