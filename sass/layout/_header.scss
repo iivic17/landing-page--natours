@@ -6,28 +6,48 @@
 			rgba($color-primary-light, 0.8),
 			rgba($color-primary-dark, 0.8)
 		),
-		url(./../assets/images/hero.jpg);
+		url(./../assets/images/hero-small.jpg);
 	background-size: cover;
 	background-position: top;
 
 	position: relative;
 
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+	@media 
+	(min-resolution: 192dpi) and (min-width: 37.5em),
+	(min-wdth: 125em) {
+		background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary-light, 0.8),
+			rgba($color-primary-dark, 0.8)
+		),
+		url(./../assets/images/hero.jpg);
+	}
+
+	@media (min-wdth: 2000px) {
+		background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary-light, 0.8),
+			rgba($color-primary-dark, 0.8)
+		),
+		url(./../assets/images/hero.jpg);
+	}
+
 	@include respond(tab-land) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 	}
 
 	@include respond(tab-port) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%);
 	}
 
 	@include respond(phone) {
 		height: 85vh;
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 77vh, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 77vh, 0 100%);
 	}
 
