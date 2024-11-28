@@ -47,3 +47,8 @@ body {
 	outline: 2px solid rgba($color-white, 0.2);
 	box-shadow: none;
 }
+
+::selection {
+	background-color: $color-primary;
+	color: $color-white;
+}
