@@ -7,6 +7,9 @@
 # Icon must end with two \r
 Icon
 
+css/style.comp.css
+css/style.prefix.css
+
 
 # Thumbnails
 ._*
