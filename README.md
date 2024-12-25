@@ -1,6 +1,6 @@
 # Natures
 
-A responsive and visually engaging website for showcasing outdoor tours and adventures.
+A pure CSS landing page designed to showcase advanced SASS techniques, animations, and adherence to modern best practices such as the **BEM methodology** and **7-1 SASS architecture**.
 
 ![Natures Mockup](natures-mockup.png)
 
