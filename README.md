@@ -1,47 +1,22 @@
 # Natures
 
-A pure CSS landing page designed to showcase advanced SASS techniques, animations, and adherence to modern best practices such as the **BEM methodology** and **7-1 SASS architecture**.
+Natures is a pure CSS landing page focused on advanced **SASS** techniques, animations, and the **float layout system**. It follows the **BEM methodology** and the **7-1 SASS architecture** to create a responsive and visually engaging design.
 
 ![Natures Mockup](natures-mockup.png)
 
 ## Features
 
 ### ✨ User Interface and Interaction
-- Responsive layout designed with **float-based CSS** for cross-device compatibility.
-- Smooth animations, including hover effects and transitions for interactive elements.
-- Sticky navigation implemented with pure CSS techniques.
+- **Responsive Layout:** Designed with the **float layout system** for cross-device compatibility.
+- **Smooth Animations:** Includes hover effects and transitions for interactive elements.
+- **Sticky Navigation:** Implemented with pure CSS techniques for a seamless user experience.
 
 ### 🌈 Styling and Performance
-- Modular **SCSS architecture** for organized and maintainable stylesheets.
-- Utilized **media queries** to ensure a seamless experience across devices, including large desktops and small smartphones.
-- Custom animations defined with **@keyframes** for engaging user interactions (e.g., button animations and text transitions).
+- **Modular SCSS Architecture:** Organized and maintainable stylesheets using the **7-1 SASS architecture**.
+- **Media Queries:** Ensures a seamless experience across devices, including large desktops and small smartphones.
+- **Custom Animations:** Defined with **@keyframes** for engaging user interactions, such as button animations and text transitions.
 
 ### 📷 Media Optimization
-- Responsive images implemented with `srcset` and `sizes` attributes for improved loading times.
-- Background video integration for immersive visual effects, with fallback for unsupported browsers.
-- Icon fonts used for lightweight and scalable vector graphics.
-
-### 🔒 Semantic and Accessible HTML
-- Semantic HTML5 structure following best practices for readability and accessibility.
-- Forms include accessible labels and visual feedback for user input validation.
-
-### 🚀 Development Workflow
-- Live preview during development via **Live Server** for real-time updates.
-- Automated build scripts for:
-  - **SCSS compilation** and CSS minification.
-  - **Autoprefixing** to ensure browser compatibility.
-  - Running parallel development tasks using **npm-run-all**.
-
-## Technologies
-
-### Tools & Libraries
-- **node-sass**: SCSS compilation to CSS.
-- **PostCSS** with **Autoprefixer**: Ensures CSS compatibility across browsers.
-- **npm-run-all**: Task runner for combining development and build processes.
-- **Live Server**: Enables live reloading during development.
-
-### CSS Techniques
-- **Float-based layout** for responsive and flexible design.
-- Custom animations using **@keyframes**.
-- **Media queries** for device-specific styling.
-
+- **Responsive Images:** Implemented with `srcset` and `sizes` attributes for improved loading times.
+- **Background Video Integration:** Provides immersive visual effects with fallback options for unsupported browsers.
+- **Icon Fonts:** Utilizes lightweight and scalable vector graphics for crisp iconography.
